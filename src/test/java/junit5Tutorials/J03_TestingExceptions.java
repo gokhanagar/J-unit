@@ -39,7 +39,7 @@ public class J03_TestingExceptions {
 
         //str.length();
         assertThrows(NullPointerException.class, () -> str.length()); //passed
-        assertThrows(NumberFormatException.class, () -> str.length()); //failed --> farkli tur exception firlatir
+        //assertThrows(NumberFormatException.class, () -> str.length()); //failed --> farkli tur exception firlatir
 
     }
 
