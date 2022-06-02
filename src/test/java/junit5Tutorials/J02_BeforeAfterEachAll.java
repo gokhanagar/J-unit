@@ -2,8 +2,9 @@ package junit5Tutorials;
 
 import org.junit.jupiter.api.*;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Arrays;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class J02_BeforeAfterEachAll {
 
@@ -74,9 +75,18 @@ public class J02_BeforeAfterEachAll {
         String expected[] = {"Java", "ogrenenler"};
 
         assertArrayEquals(expected, actual, "array'ler esit degil");
+        assertTrue(Arrays.equals(expected, actual));
         System.out.println("TEST 2 --> array method calistirildi");
 
     }
+
+    @Test
+    void testToFindMin(){
+        assertTrue(5== Math.min(5,15));
+        assertFalse(3==Math.min(6,9));
+    }
+
+
 
 
 }

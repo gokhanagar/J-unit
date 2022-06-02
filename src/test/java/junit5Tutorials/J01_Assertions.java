@@ -30,6 +30,16 @@ public class J01_Assertions {
     }
 
     @Test
+    void testToAssert2() {
+        int actualLength = "Hello World".length();
+        int expectedLength = 11;
+
+        assertEquals(expectedLength, actualLength);
+        assertTrue(expectedLength == actualLength);
+        //assertFalse(expectedLength == actualLength);
+    }
+
+    @Test
     @DisplayName("ToConvertUpper test")
     void testToConvertUpper() {
 
@@ -40,6 +50,7 @@ public class J01_Assertions {
 
         assertTrue(expected.equals(actual)); //passed
         assertFalse(!actual.equals(expected)); //passed
+
 
         actual = null;
         assertNull(actual, "actual deger null degil");//passed

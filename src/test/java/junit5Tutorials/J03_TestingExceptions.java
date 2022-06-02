@@ -13,7 +13,7 @@ public class J03_TestingExceptions {
         Dolayisiyla 2 paremetre alir
         1. parametre --> expected(beklenen) Exception(istisna)turu,
         2. parametre --> actual(olusacak) calistirilacak olan islemdir.
-    Eger islem belirtilen turde bir exception olusturursa test basarli olur. TEST PASSED
+    Eger islem belirtilen turde bir exception olusturursa test basarili olur. TEST PASSED
     ama exception olusmaz ise veya turu yanlis olursa test basarisiz olur. TEST FAILED
     Exception.io turunde parent-child iliskisi var ise yine test basarili sayilir.
      */
@@ -38,7 +38,7 @@ public class J03_TestingExceptions {
         String str = null;
 
         //str.length();
-        assertThrows(NullPointerException.class, () -> str.length()); //passed
+      //  assertThrows(NullPointerException.class, () -> str.length()); //passed
         //assertThrows(NumberFormatException.class, () -> str.length()); //failed --> farkli tur exception firlatir
 
     }
