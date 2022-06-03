@@ -21,10 +21,10 @@ public class J03_TestingExceptions {
     @Test
     void testException1() {
         // String strSayi ="1453";
-        //String strSayi ="14a53"; //NumberFormatException
+        String strSayi ="14a53"; //NumberFormatException
         //Integer intSayi = Integer.parseInt(strSayi); //1453
 
-        assertThrows(NumberFormatException.class, () -> Integer.parseInt("14a3"));//passed
+        assertThrows(NumberFormatException.class, () -> Integer.parseInt("strSayi"));//passed
         //assertThrows(NumberFormatException.class, ()->Integer.parseInt("143"));//failed
         assertThrows(Exception.class, () -> Integer.parseInt("14a3"));
         //passed --> Exception parentNumberFormatException child
